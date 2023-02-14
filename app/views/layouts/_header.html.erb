@@ -11,8 +11,12 @@
       <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
         <li class="nav-item"><a class="nav-link" href="#portfolio">新着投稿</a></li>
         <li class="nav-item"><a class="nav-link" href="#portfolio">投稿一覧</a></li>
-        <li class="nav-item"><%= link_to "ログイン", new_user_session_path, class: "nav-link" %></li>
-        <li class="nav-item"><%= link_to "新規登録", new_user_registration_path, class: "nav-link" %></li>
+        <% if user_signed_in? %>
+          <li class="nav-item"><%= link_to "ログアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
+        <% else %>
+          <li class="nav-item"><%= link_to "ログイン", new_user_session_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to "新規登録", new_user_registration_path, class: "nav-link" %></li>
+        <% end %>
       </ul>
     </div>
   </div>
