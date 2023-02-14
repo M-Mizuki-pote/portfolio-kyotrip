@@ -12,6 +12,7 @@
 .sign-in h2{
  color: #343a40;
  font-size: 22px;
+padding-bottom: 10px;
 }
 
 .sign-in-2{
@@ -21,20 +22,21 @@
 .sign-in-field{
  width: 400px;
  height: 40px;
+margin-right:50px;
 }
 
 .field{
- margin-bottom: 15px;
+ margin-bottom: 10px;
 }
 
 .sign-in-btn{
-  width: 400px;
-  height: 40px;
-  background-color: #ffc800;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  margin-bottom: 5px;
+ width: 400px;
+ height: 40px;
+ background-color: #ffc800;
+ color: #fff;
+ border: none;
+ border-radius: 3px;
+ margin-bottom: 5px;
 }
 
 .sign-in-btn:hover{
@@ -47,17 +49,28 @@
 }
 
 .sign-up-btn{
-  width: 400px;
-  height: 40px;
-  background-color: #ffc800;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  margin-top: 20px;
-  margin-bottom: 5px;
+ width: 400px;
+ height: 40px;
+ background-color: #ffc800;
+ color: #fff;
+ border: none;
+ border-radius: 3px;
+ margin-top: 20px;
+ margin-bottom: 5px;
 }
 
 .sign-up-btn:hover{
  background-color: #d9aa00;
  transition: 0.3s;
+}
+
+.required{
+ background-color: #E83E52;
+ width: 40px;
+ height: 23px;
+ font-size: 12px;
+ border-radius: 3px;
+ margin-right:10px;
+ color: #fff;
+ display: inline-block;
 }
